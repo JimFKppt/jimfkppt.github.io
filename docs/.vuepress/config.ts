@@ -63,7 +63,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text:'安装、连接、配置', link:'/pages/470161/'},
               { text:'数据库的基本操作', link:'/pages/941ecd/'},
               { text:'表的基本操作', link:'/pages/ec25bb/'},
-              { text:'数据的基本操作——增删改查', link:'/pages/5d5c8d/'},
+              { text:'数据的基本操作', link:'/pages/5d5c8d/'},
               { text:'数据类型', link:'/pages/27b8c9/'},
               { text:'列属性完整性', link:'/pages/bee03e/'},
             ],
@@ -86,16 +86,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+          { text: 'Git', link: '/note/git/'},
           { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
-          { text: '《Git》', link: '/note/git/'},
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-          { text: '《TypeScript 从零实现 axios》', link: '/note/typescript-axios/',},
-          { text: 'TypeScript', link: '/pages/51afd6/',},
-          { text: 'JS设计模式总结',link: '/pages/4643cd/',},
+          { text: '前端', link: '/pages/8309a5b876fc95e3/'},
         ],
       },
       {
@@ -110,15 +103,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       { text: '关于', link: '/about/' },
-      {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
-      },
+      { text: '收藏', link: '/pages/beb6c0bd8a66cea6/'},
       {
         text: '索引',
         link: '/archives/',
@@ -129,7 +114,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
     ],
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 1, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/JIMFKLIFE_favicon.svg', // 导航栏logo
     repo: 'JimFKppt/jimfkppt.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -213,7 +198,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 自定义hmtl(广告)模块
-    htmlModules
+    // htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
