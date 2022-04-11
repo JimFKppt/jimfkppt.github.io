@@ -15,7 +15,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
+      title: "Jim's blog",
       description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
@@ -27,50 +27,58 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: 'Java',
+        link: '/Java/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: 'Java与生活',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: '参考资料', link: '/pages/3cd18d/' },
+              { text: '一带而过', link: '/pages/163b6d/'},
+              { text: 'OOP上半部分', link: '/pages/889e74/'},
+              { text: 'OOP下半部分', link: '/pages/6bd538/'},
+            ],
+          },
+          {
+            text: '后端文章',
+            items: [
             ],
           },
           {
             text: '学习笔记',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
             ],
           },
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
+        text: 'MySQL',
+        link: '/mysql/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          {
+            text: 'MySQL删库跑路',
+            items: [
+              { text:'吹比', link:'/pages/dcd24f/'},
+              { text:'安装、连接、配置', link:'/pages/470161/'},
+              { text:'数据库的基本操作', link:'/pages/941ecd/'},
+              { text:'表的基本操作', link:'/pages/ec25bb/'},
+              { text:'数据的基本操作——增删改查', link:'/pages/5d5c8d/'},
+              { text:'数据类型', link:'/pages/27b8c9/'},
+              { text:'列属性完整性', link:'/pages/bee03e/'},
+            ],
+          }
+        ],
+      },
+      { text: 'Linux',
+        link: '/Linux/',
+        items: [
+          {
+            text: 'Linux现代方法',
+            items: [
+              { text:'Shell命令', link:'/pages/945f3b/' },
+            ],
+          },
         ],
       },
       {
@@ -81,6 +89,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
           { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
           { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: '《Git》', link: '/note/git/'},
+          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          { text: '《TypeScript 从零实现 axios》', link: '/note/typescript-axios/',},
+          { text: 'TypeScript', link: '/pages/51afd6/',},
+          { text: 'JS设计模式总结',link: '/pages/4643cd/',},
         ],
       },
       {
@@ -115,8 +130,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    logo: '/img/JIMFKLIFE_favicon.svg', // 导航栏logo
+    repo: 'JimFKppt/jimfkppt.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -130,18 +145,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    // bodyBgImg: [
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    // titleBadge: false, // 文章标题前的图标是否显示，默认true
+    bodyBgImg: [
+      // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
+      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bg.jpg',
+      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
+    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
+    titleBadge: true, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
     // ],
-    // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+    contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
@@ -156,15 +172,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'Jim', // 必需
+      link: 'https://github.com/JimFKppt', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/Avatar-KeNan.jpg',
+      name: 'Jim FuckPPT',
+      slogan: 'Java小学生',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -174,26 +190,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'tj102030123@gmail.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/jimfkppt',
         },
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://music.apple.com/cn/playlist/like/pl.u-JPAZbd9sLx97JJx?ls',
         },
       ],
     },
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'Jim FuckPPT | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 自定义hmtl(广告)模块
@@ -202,12 +218,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/JIMFKLIFE_favicon.svg' }], //favicons，资源放在public文件夹
     [
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '后端博客,个人技术博客,后端,后端开发,技术文档,学习,面试,Java,MySQL,Linux,数据库,服务器,编程,学习,git,github,markdown',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
@@ -238,7 +254,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
     'fulltext-search',
 
-    // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
+    // // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
     // 'thirdparty-search': {
     //   thirdparty: [
     //     {
@@ -302,11 +318,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          clientID: '17024051ee83b40fb4b3',
+          clientSecret: '8e206147ee7024cff0324d92d43a95d36db44e32',
+          repo: 'blog_gitalk_comment', // GitHub 仓库
+          owner: 'JimFKppt', // GitHub仓库所有者
+          admin: ['JimFKppt'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
