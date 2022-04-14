@@ -16,7 +16,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Jim's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      description: 'Java后端小学生',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -34,10 +34,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Java与生活',
             items: [
-              { text: '参考资料', link: '/pages/3cd18d/' },
-              { text: '一带而过', link: '/pages/163b6d/'},
-              { text: 'OOP上半部分', link: '/pages/889e74/'},
-              { text: 'OOP下半部分', link: '/pages/6bd538/'},
+              { text: '参考资料', link: '/pages/8bd1db/' },
+              { text: '一带而过', link: '/pages/34af60/'},
+              { text: 'OOP上半部分', link: '/pages/d161b3/'},
+              { text: 'OOP下半部分', link: '/pages/a2c72d/'},
             ],
           },
           {
@@ -59,15 +59,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'MySQL删库跑路',
             items: [
-              { text:'吹比', link:'/pages/dcd24f/'},
-              { text:'安装、连接、配置', link:'/pages/470161/'},
-              { text:'数据库的基本操作', link:'/pages/941ecd/'},
-              { text:'表的基本操作', link:'/pages/ec25bb/'},
-              { text:'数据的基本操作', link:'/pages/5d5c8d/'},
-              { text:'数据类型', link:'/pages/27b8c9/'},
-              { text:'列属性完整性', link:'/pages/bee03e/'},
+              { text:'吹比', link:'/pages/dec33b/'},
+              { text:'安装、连接、配置', link:'/pages/e04e78/'},
+              { text:'数据库的基本操作', link:'/pages/b673ce/'},
+              { text:'表的基本操作', link:'/pages/ac604a/'},
+              { text:'数据的基本操作', link:'/pages/bda483/'},
+              { text:'数据类型', link:'/pages/88991f/'},
+              { text:'列属性完整性', link:'/pages/525c9a/'},
             ],
-          }
+          },
+          { text: "数据库", link: '/pages/9a852e/' },
         ],
       },
       { text: 'Linux',
@@ -95,6 +96,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '更多',
         link: '/more/',
         items: [
+          { text: 'To The Future', link: '/pages/a4fdde/' },
           { text: '学习', link: '/pages/f2a556/' },
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
@@ -103,18 +105,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       { text: '关于', link: '/about/' },
-      { text: '收藏', link: '/pages/beb6c0bd8a66cea6/'},
+      { text: '收藏', link: '/pages/5b66ca/'},
       {
         text: '索引',
         link: '/archives/',
         items: [
-          { text: '分类', link: '/categories/' },
+          // { text: '分类', link: '/categories/' },
           { text: '标签', link: '/tags/' },
           { text: '归档', link: '/archives/' },
         ],
       },
     ],
-    sidebarDepth: 1, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/JIMFKLIFE_favicon.svg', // 导航栏logo
     repo: 'JimFKppt/jimfkppt.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -125,16 +127,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
-    // category: false, // 是否打开分类功能，默认true
+    category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
       'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bg.jpg',
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/freestocks-OfaDD5o8hpk-unsplash.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/lucian-dachman-v_mTgSs6UiY-unsplash.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/francesco-ungaro-9KYRFX82EC0-unsplash.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallpaper-2572384.jpg',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     titleBadge: true, // 文章标题前的图标是否显示，默认true
