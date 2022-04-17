@@ -77,7 +77,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Linux现代方法',
             items: [
-              { text:'Shell命令', link:'/pages/945f3b/' },
+              { text:'必知', link:'/pages/0c031c/' },
+              { text:'命令', link:'/pages/11d275/' },
+              { text:'技巧', link:'/pages/adaf3b/' },
+
+              { text:'其它', link:'/pages/4e011c/' },
             ],
           },
         ],
