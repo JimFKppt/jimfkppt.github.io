@@ -80,9 +80,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text:'必知', link:'/pages/0c031c/' },
               { text:'命令', link:'/pages/11d275/' },
               { text:'技巧', link:'/pages/adaf3b/' },
-
-              { text:'其它', link:'/pages/4e011c/' },
             ],
+          },
+          {
+            text: "其它",
+            items: [
+              { text:'其它', link:'/pages/4e011c/' },
+            ]
           },
         ],
       },
@@ -97,10 +101,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
+        text: '记录',
+        link: '/record/',
+        items: [
+          { text: 'Description', link: '/pages/a4fdde/'},
+          { text: 'Monthly', link: '/pages/455805/'},
+          { text: 'Others', link: '/pages/bdd3a5/'},
+        ],
+      },
+      {
         text: '更多',
         link: '/more/',
         items: [
-          { text: 'To The Future', link: '/pages/a4fdde/' },
           { text: '学习', link: '/pages/f2a556/' },
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
@@ -137,14 +149,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallpaper-878514.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg',
-      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/freestocks-OfaDD5o8hpk-unsplash.jpg',
-      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/lucian-dachman-v_mTgSs6UiY-unsplash.jpg',
-      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/francesco-ungaro-9KYRFX82EC0-unsplash.jpg',
-      // 'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallpaper-2572384.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04180_grandtetonsunset_2880x1800.jpg',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     titleBadge: true, // 文章标题前的图标是否显示，默认true
