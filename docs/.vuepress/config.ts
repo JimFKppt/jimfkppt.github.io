@@ -43,11 +43,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '后端文章',
             items: [
+              
             ],
           },
           {
             text: '学习笔记',
             items: [
+              { text: 'JetBrains Academy - JBD', link: '/pages/577f0d/'},
             ],
           },
         ],
@@ -150,10 +152,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     bodyBgImg: [
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallpaper-878514.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/pexels-jakub-novacek-924824.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-3zgz2y_1920x1200.png',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04175_thecitythatneversleeps_1920x1200.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-8oev1j.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/21.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04180_grandtetonsunset_2880x1800.jpg',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     titleBadge: true, // 文章标题前的图标是否显示，默认true
@@ -161,7 +166,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '图标地址1',
     //   '图标地址2'
     // ],
-    contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+    contentBgStyle: 4, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
