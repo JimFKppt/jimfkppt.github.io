@@ -106,7 +106,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '记录',
         link: '/record/',
         items: [
-          { text: 'Description', link: '/pages/a4fdde/'},
           { text: 'Monthly', link: '/pages/455805/'},
           { text: 'Others', link: '/pages/bdd3a5/'},
         ],
@@ -151,17 +150,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/pexels-jakub-novacek-924824.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-3zgz2y_1920x1200.png',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04175_thecitythatneversleeps_1920x1200.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
+      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-3zgz2y_1920x1200.png',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-8oev1j.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/21.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    titleBadge: true, // 文章标题前的图标是否显示，默认true
+    titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
