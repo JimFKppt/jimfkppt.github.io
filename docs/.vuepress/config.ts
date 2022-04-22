@@ -32,6 +32,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
+            text: '学习笔记',
+            items: [
+              { text: 'JetBrains Academy - Java', link: '/pages/577f0d/'},
+            ],
+          },
+          {
             text: 'Java与生活',
             items: [
               { text: '参考资料', link: '/pages/8bd1db/' },
@@ -46,36 +52,42 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               
             ],
           },
-          {
-            text: '学习笔记',
-            items: [
-              { text: 'JetBrains Academy - JBD', link: '/pages/577f0d/'},
-            ],
-          },
         ],
       },
       {
         text: 'MySQL',
         link: '/mysql/',
         items: [
+          { 
+            text: "学习笔记",
+            items: [
+              { text: "数据库", link: '/pages/9a852e/'},
+            ],
+          },
           {
             text: 'MySQL删库跑路',
             items: [
               { text:'吹比', link:'/pages/dec33b/'},
               { text:'安装、连接、配置', link:'/pages/e04e78/'},
-              { text:'数据库的基本操作', link:'/pages/b673ce/'},
-              { text:'表的基本操作', link:'/pages/ac604a/'},
-              { text:'数据的基本操作', link:'/pages/bda483/'},
+              { text:'基本操作——数据库', link:'/pages/b673ce/'},
+              { text:'基本操作——表', link:'/pages/ac604a/'},
+              { text:'基本操作——数据', link:'/pages/bda483/'},
               { text:'数据类型', link:'/pages/88991f/'},
               { text:'列属性完整性', link:'/pages/525c9a/'},
+              { text:'数据库设计思维', link:'/pages7bc52e/'},
             ],
           },
-          { text: "数据库", link: '/pages/9a852e/' },
         ],
       },
       { text: 'Linux',
         link: '/Linux/',
         items: [
+          {
+            text: "学习笔记",
+            items: [
+              { text:'其它', link:'/pages/4e011c/' },
+            ]
+          },
           {
             text: 'Linux现代方法',
             items: [
@@ -83,12 +95,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text:'命令', link:'/pages/11d275/' },
               { text:'技巧', link:'/pages/adaf3b/' },
             ],
-          },
-          {
-            text: "其它",
-            items: [
-              { text:'其它', link:'/pages/4e011c/' },
-            ]
           },
         ],
       },
