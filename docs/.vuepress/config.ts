@@ -74,7 +74,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text:'基本操作——数据', link:'/pages/bda483/'},
               { text:'数据类型', link:'/pages/88991f/'},
               { text:'列属性完整性', link:'/pages/525c9a/'},
-              { text:'数据库设计思维', link:'/pages7bc52e/'},
+              { text:'数据库设计思维', link:'/pages/7bc52e/'},
             ],
           },
         ],
