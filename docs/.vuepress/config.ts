@@ -41,7 +41,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: 'Java与生活',
             items: [
               { text: '参考资料', link: '/pages/8bd1db/' },
-              { text: '一带而过', link: '/pages/34af60/'},
+              { text: 'Java基础', link: '/pages/ea2997/'},
               { text: 'OOP上半部分', link: '/pages/d161b3/'},
               { text: 'OOP下半部分', link: '/pages/a2c72d/'},
             ],
