@@ -34,8 +34,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '学习笔记',
             items: [
-              { text: 'JetBrains Academy - Java', link: '/pages/577f0d/'},
+              { text: 'JetBrains Academy - Java', link: '/pages/6bc01b/'},
             ],
+          },
+          {
+            text: '练习题', link: '/pages/5a0fd5/'
+            // items: [
+            //   { text: 'Problem', link: '/pages/5a0fd5/'},
+            // ]
           },
           {
             text: 'Java与生活',
