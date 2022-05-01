@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"Write, compile and run","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"Java is not noly a programming language"},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"Writing a program","children":[{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"Plain text file with extension","children":[{"type":"heading","depth":4,"payload":{"lines":[5,6]},"content":"Like <code>.java</code>、<code>.kt</code>、<code>.c</code>、<code>.py</code> ..."},{"type":"heading","depth":4,"payload":{"lines":[6,7]},"content":"Source code put in these files"},{"type":"heading","depth":4,"payload":{"lines":[7,8]},"content":"Single program has one or more such files"}]},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"Source code","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"follow the syntax rules"},{"type":"heading","depth":4,"payload":{"lines":[11,12]},"content":"easy to read and understand"}]},{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"instructions specifying what the program does"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"Compilation","children":[{"type":"heading","depth":3,"payload":{"lines":[17,18]},"content":"Source code --&gt; <strong>Compiler</strong> --&gt; Native code (low-level code)"},{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"Compiler","children":[{"type":"heading","depth":4,"payload":{"lines":[19,20]},"content":"Like <code>javac</code> tool, <code>kotlinc</code> tool ..."}]},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"Intermediate representation","children":[{"type":"heading","depth":4,"payload":{"lines":[21,22]},"content":"Like <strong>Java Bytecode</strong>"},{"type":"heading","depth":4,"payload":{"lines":[22,23]},"content":"Stored in files with a <code>.class</code> extension"}]}]},{"type":"heading","depth":2,"payload":{"lines":[24,25]},"content":"Run a program","children":[{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"JVM (Java Virtual Machine)","children":[{"type":"heading","depth":4,"payload":{"lines":[26,27]},"content":"Executes bytecode, giving low-level commands to the computer"},{"type":"heading","depth":4,"payload":{"lines":[27,28]},"content":"Providing platform independence for programs"}]},{"type":"heading","depth":3,"payload":{"lines":[28,29]},"content":"&quot;write once, run anywhere&quot;","children":[{"type":"heading","depth":4,"payload":{"lines":[29,30]},"content":"This concept called <strong>platform independence</strong> or portability"}]}]},{"type":"heading","depth":2,"payload":{"lines":[31,32]},"content":"JVM languages","children":[{"type":"heading","depth":3,"payload":{"lines":[32,33]},"content":"Java","children":[{"type":"heading","depth":4,"payload":{"lines":[33,34]},"content":"Java compiler","children":[{"type":"heading","depth":5,"payload":{"lines":[34,35]},"content":"Java bytecode"}]}]},{"type":"heading","depth":3,"payload":{"lines":[35,36]},"content":"Kotlin","children":[{"type":"heading","depth":4,"payload":{"lines":[36,37]},"content":"Kotlin compiler","children":[{"type":"heading","depth":5,"payload":{"lines":[37,38]},"content":"Java bytecode"}]}]},{"type":"heading","depth":3,"payload":{"lines":[38,39]},"content":"Others (Scala、Groovy、Clojure...)","children":[{"type":"heading","depth":4,"payload":{"lines":[39,40]},"content":"... compiler","children":[{"type":"heading","depth":5,"payload":{"lines":[40,41]},"content":"Java bytecode"}]}]}]}]},{})</script>
+</body>
+</html>
