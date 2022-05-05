@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"Introduction OOP","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"Four basic principles","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"Encapsulation"},{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"Data abstraction"},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"Inheritance"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"Ploymorphism"}]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"Objects","children":[{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"An object is an instance of a class"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"Characteristics","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"Fields"},{"type":"heading","depth":4,"payload":{"lines":[11,12]},"content":"Methods"}]}]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"Classes","children":[{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"A class is a more abstract concept than an individual object"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"A template (or blueprint) of a set of similar objects"}]}]},{})</script>
+</body>
+</html>
