@@ -73,8 +73,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'MySQL删库跑路',
             items: [
-              { text:'吹比', link:'/pages/dec33b/'},
-              { text:'安装、连接、配置', link:'/pages/e04e78/'},
+              { text:'安装、连接、配置', link:'/pages/dec33b/'},
               { text:'基本操作——数据库', link:'/pages/b673ce/'},
               { text:'基本操作——表', link:'/pages/ac604a/'},
               { text:'基本操作——数据', link:'/pages/bda483/'},
@@ -82,6 +81,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text:'列属性完整性', link:'/pages/525c9a/'},
               { text:'数据库设计思维', link:'/pages/7bc52e/'},
               { text:'单表查询', link:'/pages/fca44f/'},
+              { text:'多表查询', link:'/pages/'}
             ],
           },
         ],
@@ -131,6 +131,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
           { text: '实用技巧', link: '/pages/baaa02/' },
+          { text: 'Khan Acadamy', link: '/pages/cb6dae/'},
           { text: '友情链接', link: '/friends/' },
         ],
       },
@@ -167,7 +168,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04175_thecitythatneversleeps_1920x1200.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-3zgz2y_1920x1200.png',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-8oev1j.jpg',
       'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
