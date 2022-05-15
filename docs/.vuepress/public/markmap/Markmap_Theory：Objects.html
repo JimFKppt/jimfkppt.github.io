@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"Objects","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"Each object has its own state separated from others"},{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"Each object is an instance of a particular class (type)"},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"All classes are <strong>reference types</strong>","children":[{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"Standard library (<code>String</code>, <code>Date</code>)"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"Custom classes (defined by programmers)"}]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"Creating objects","children":[{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"1. Keyword <code>new</code> creates an object of a particular class (<strong>Instantiation</strong>)"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"2. Assign the object to the <strong>variable</strong>"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"The variable stores a reference to the object located somewhere in the heap memory"}]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"Immutability of objects","children":[{"type":"heading","depth":3,"payload":{"lines":[13,14]},"content":"An object always stores the same values"},{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"If we need to modify these values, we should create a new object"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"Immutable types allow you to write programs with fewer errors"}]},{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"Sharing references","children":[{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"<code>Type obj2 = obj1;</code>"},{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"Two variables refer to the same data in memory rather than two independent copies"},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"Since our class is mutable, we can modify the object using both references"}]},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"Nullability","children":[{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"any variable of reference type can be <strong>null</strong> which means it is not initialized yet"}]}]},{})</script>
+</body>
+</html>
