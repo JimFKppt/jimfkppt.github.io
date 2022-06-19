@@ -16,7 +16,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Jim's blog",
-      description: 'Java后端小学生',
+      description: 'Java小学生',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -160,16 +160,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/pexels-jakub-novacek-924824.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/gabriel-l1sqXJXBgd0-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/04175_thecitythatneversleeps_1920x1200.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/matthew-henry-VviFtDJakYk-unsplash.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/wallhaven-8oev1j.jpg',
-      'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/bruce-tang-nKO_1QyFh9o-unsplash.jpg',
-    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
-    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    titleBadge: false, // 文章标题前的图标是否显示，默认true
+    // bodyBgImg: [
+    //   'https://cdn.jsdelivr.net/gh/JimFKppt/Pictures@master/static_files/img/pexels-jakub-novacek-924824.jpg'
+    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
+    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
+    // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
@@ -240,7 +235,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '后端博客,个人技术博客,后端,后端开发,技术文档,学习,面试,Java,MySQL,Linux,数据库,服务器,编程,学习,git,github,markdown',
+        content: '后端博客,个人技术博客,后端,后端开发,技术文档,学习,面试,Java,MySQL,Linux,数据库,服务器,编程,学习,git,github',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
