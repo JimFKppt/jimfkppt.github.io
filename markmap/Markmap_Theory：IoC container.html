@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"IoC (Inversion of Control)","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"The container provides core Spring functionality, such as managing the application lifecycle and dependencies"},{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Spring container","children":[{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"it is the core of the Spring framework","children":[{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"manages the lifecycle application from start to finish"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"It manages various components created for the application and handles any required dependency injections."}]},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"Two types of metadata","children":[{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"XML","children":[{"type":"heading","depth":4,"payload":{"lines":[8,9]},"content":"involves defining class-related data (in an external XML file)"}]},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"Annotations","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"involves adding annotations to simple classes in order to provide context and functionality for Spring"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[12,13]},"content":"POJO (<strong>P</strong>lain <strong>O</strong>ld <strong>J</strong>ava <strong>O</strong>bject)","children":[{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"A POJO is the most basic type of an object","children":[{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"it contains no ties to frameworks"},{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"POJOs are valid objects for any application"},{"type":"heading","depth":3,"payload":{"lines":[16,17]},"content":"it is the simplest possible unit of code available for an application"}]},{"type":"heading","depth":2,"payload":{"lines":[18,19]},"content":"Yes and no","children":[{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"They can implement properties, as well as getters and setters for these properties"},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"Cannot extend or implement framework-specific classes and interfaces classes or contain annotations."}]},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"a special type of POJO called <strong><em>JavaBean</em></strong>"},{"type":"heading","depth":2,"payload":{"lines":[24,25]},"content":"In order for a POJO to be a valid <code>JavaBean</code>, it must have:","children":[{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"available private fields"},{"type":"heading","depth":3,"payload":{"lines":[26,27]},"content":"a no-argument constructor"}]}]},{"type":"heading","depth":1,"payload":{"lines":[28,29]},"content":"<strong>Two core components</strong> of Spring IoC","children":[{"type":"heading","depth":2,"payload":{"lines":[29,30]},"content":"<code>BeanFactory</code>","children":[{"type":"heading","depth":3,"payload":{"lines":[30,31]},"content":"an <strong><em>interface</em></strong> that allows for configuration and management of objects."},{"type":"heading","depth":3,"payload":{"lines":[31,32]},"content":"produce container-managed objects known as <strong><em>beans</em></strong>","children":[{"type":"heading","depth":4,"payload":{"lines":[32,33]},"content":"they organize the backbone of your application."}]}]},{"type":"heading","depth":2,"payload":{"lines":[33,34]},"content":"<code>ApplicationContext</code>","children":[{"type":"heading","depth":3,"payload":{"lines":[34,35]},"content":"is a <strong><em>sub-interface</em></strong> of the BeanFactory"},{"type":"heading","depth":3,"payload":{"lines":[35,36]},"content":"The goal of the ApplicationContext is to facilitate integration with <strong>Spring's Aspect Oriented Programming</strong> (AOP) functionality."},{"type":"heading","depth":3,"payload":{"lines":[36,37]},"content":"Three main implementations:","children":[{"type":"heading","depth":4,"payload":{"lines":[37,38]},"content":"<code>FileSystemXmlApplicationContext</code>","children":[{"type":"heading","depth":5,"payload":{"lines":[38,39]},"content":"load bean definitions from an XML file"},{"type":"heading","depth":5,"payload":{"lines":[39,40]},"content":"the file is provided as a full file system path to the constructor"}]},{"type":"heading","depth":4,"payload":{"lines":[40,41]},"content":"<code>ClassPathXmlApplicationContext</code>","children":[{"type":"heading","depth":5,"payload":{"lines":[41,42]},"content":"load bean definitions from an XML file"},{"type":"heading","depth":5,"payload":{"lines":[42,43]},"content":"the file is provided as the <strong>CLASSPATH</strong> property"}]},{"type":"heading","depth":4,"payload":{"lines":[43,44]},"content":"<code>WebApplicationContext</code>","children":[{"type":"heading","depth":5,"payload":{"lines":[44,45]},"content":"generally used to set the configuration of a web application in Spring."},{"type":"heading","depth":5,"payload":{"lines":[45,46]},"content":"set the servlet configuration within a <code>web.xml</code> file"}]}]}]}]}]},{})</script>
+</body>
+</html>

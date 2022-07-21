@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"The Object class","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"Every class extends this one <strong>implicitly</strong>","children":[{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"All standard classes"},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"Your custom classes"}]},{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"It's a root of inheritance in Java programs"},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"Object class belongs to the <code>java.lang</code> package that is imported by default"},{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"Methods provided by the Object class (Nine)","children":[{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"<strong>threads synchronization</strong>","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"<code>wait</code>"},{"type":"heading","depth":4,"payload":{"lines":[11,12]},"content":"<code>notify</code>"},{"type":"heading","depth":4,"payload":{"lines":[12,13]},"content":"<code>notifyAll</code>"}]},{"type":"heading","depth":3,"payload":{"lines":[14,15]},"content":"<strong>object identity</strong>","children":[{"type":"heading","depth":4,"payload":{"lines":[15,16]},"content":"<code>hashCode</code>"},{"type":"heading","depth":4,"payload":{"lines":[16,17]},"content":"<code>equals</code>"}]},{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"<strong>object management</strong>","children":[{"type":"heading","depth":4,"payload":{"lines":[19,20]},"content":"<code>finalize</code>"},{"type":"heading","depth":4,"payload":{"lines":[20,21]},"content":"<code>clone</code>"},{"type":"heading","depth":4,"payload":{"lines":[21,22]},"content":"<code>getClass</code>"}]},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"<strong>human-readable representation</strong>","children":[{"type":"heading","depth":4,"payload":{"lines":[24,25]},"content":"<code>toString</code>"}]}]},{"type":"heading","depth":2,"payload":{"lines":[26,27]},"content":"Some of those methods implemented in the <strong>native</strong> code","children":[{"type":"heading","depth":3,"payload":{"lines":[27,28]},"content":"Native methods are usually used to interface with system calls"},{"type":"heading","depth":3,"payload":{"lines":[28,29]},"content":"Or libraries written in other programming languages"}]}]},{})</script>
+</body>
+</html>

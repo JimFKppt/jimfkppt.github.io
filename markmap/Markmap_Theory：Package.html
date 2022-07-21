@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"Package","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"Advantages","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"group related classes together","children":[{"type":"heading","depth":4,"payload":{"lines":[3,4]},"content":"makes it easier to figure out where a certain class is"}]},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"avoid conflicting class names"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"control access to classes and members with access modifiers"}]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"Naming convention","children":[{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"always lowercase"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"using dot <code>.</code> sepreate words"},{"type":"heading","depth":3,"payload":{"lines":[10,11]},"content":"like <code>org.hyperskill</code>、<code>java.util</code>、<code>java.lang</code>"}]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"<code>package</code> keyword","children":[{"type":"heading","depth":3,"payload":{"lines":[13,14]},"content":"current package"}]},{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"<code>import</code> keyword","children":[{"type":"heading","depth":3,"payload":{"lines":[16,17]},"content":"<code>*</code>","children":[{"type":"heading","depth":4,"payload":{"lines":[17,18]},"content":"import all classes from a package"},{"type":"heading","depth":4,"payload":{"lines":[18,19]},"content":"Don't do this too often"}]},{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"<code>static import</code>"}]},{"type":"heading","depth":2,"payload":{"lines":[21,22]},"content":"Default package","children":[{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"This package has a big disadvantage"}]}]},{})</script>
+</body>
+</html>

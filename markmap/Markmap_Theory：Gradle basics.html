@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Gradle basics","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"<strong>Gradle</strong> is a modern automation tool that helps build and manage projects"},{"type":"heading","depth":1,"payload":{"lines":[3,4]},"content":"Gradle is its <a href=\"https://en.wikipedia.org/wiki/Apache_Groovy\">Groovy-based</a> <strong>domain-specific language</strong> (DSL)","children":[{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"that gives developers a specific way to form custom build scripts"}]},{"type":"heading","depth":1,"payload":{"lines":[6,7]},"content":"there are two languages to write the Gradle build scripts","children":[{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"Groovy"},{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"Kotlin"}]},{"type":"heading","depth":1,"payload":{"lines":[10,11]},"content":"two major applications of Gradle","children":[{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"Android applications"},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"Java / Kotlin / Scala server-side projects"}]},{"type":"heading","depth":1,"payload":{"lines":[14,15]},"content":"The key features of Gradle","children":[{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"<strong>Settings files.</strong>"},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"<strong>Build-by-convention.</strong>"},{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"<strong>Dependency management.</strong>"},{"type":"heading","depth":2,"payload":{"lines":[18,19]},"content":"<strong>Builds</strong>."},{"type":"heading","depth":2,"payload":{"lines":[19,20]},"content":"<strong>Ease of migration</strong>."},{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"<strong>DSL</strong> (based on Groovy and Kotlin) for writing scripts in settings files."},{"type":"heading","depth":2,"payload":{"lines":[21,22]},"content":"(Here is <a href=\"https://gradle.org/features/\">the full list of features</a>, if you want to get more information on them.)"}]},{"type":"heading","depth":1,"payload":{"lines":[23,24]},"content":"Downloading and installing Gradle","children":[{"type":"heading","depth":2,"payload":{"lines":[24,25]},"content":"<a href=\"https://gradle.org/releases/\">the official website</a>"}]}]},{})</script>
+</body>
+</html>
