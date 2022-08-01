@@ -15,7 +15,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Jim's blog",
+      title: "Jim's knowledge base",
       description: 'Java小学生',
     }
   },
