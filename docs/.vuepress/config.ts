@@ -32,7 +32,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           { 
-            text: 'JetBrains Academy - Java', link: '/pages/6bc01b/'
+            text: 'JetBrains Academy - Java', // link: '/pages/6bc01b/'
+            items: [
+              { text: 'Java basic', link: '/pages/73dc48/' },
+              { text: 'Java OOP', link: '/pages/af043d/'},
+              { text: '应知', link: '/pages/6bc01b/'},
+              { text: '扩展知识', link: '/pages/281194/'},
+              { text: 'Spring boot', link: '/pages/310689/'},
+            ],
           },
           {
             text: '练习题', link: '/pages/5a0fd5/'
@@ -47,12 +54,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: 'Java基础', link: '/pages/ea2997/'},
               { text: 'OOP上半部分', link: '/pages/d161b3/'},
               { text: 'OOP下半部分', link: '/pages/a2c72d/'},
-            ],
-          },
-          {
-            text: '后端文章',
-            items: [
-              
             ],
           },
         ],
