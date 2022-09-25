@@ -32,28 +32,42 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           { 
-            text: 'JetBrains Academy - Java', // link: '/pages/6bc01b/'
+            text: 'Hyperskill - Java', // link: '/pages/6bc01b/'
             items: [
               { text: 'Java basic', link: '/pages/73dc48/' },
               { text: 'Java OOP', link: '/pages/af043d/'},
               { text: '应知', link: '/pages/6bc01b/'},
-              { text: '扩展知识', link: '/pages/281194/'},
+              { text: '扩展', link: '/pages/281194/'},
+              { text: 'IO & Stream', link: '/pages/03b557/'},
+              { text: 'Error & Exception', link: '/pages/5fc0af/'},
+              { text: 'Algorithm & Data structure', link: '/pages/5276ce/'},
+              { text: 'Web', link: '/pages/4b9292/'},
               { text: 'Spring boot', link: '/pages/310689/'},
             ],
           },
           {
-            text: '练习题', link: '/pages/5a0fd5/'
-            // items: [
-            //   { text: 'Problem', link: '/pages/5a0fd5/'},
-            // ]
+            text: '练习题', link: '/pages/5a0fd5/',
+            items: [
+              { text: '选择题 & 填空题', link: '/pages/dcd812/'},
+              { text: '代码题', link: '/pages/5a0fd5/'},
+            ],
           },
           {
-            text: 'Java与生活',
+            text: 'Frank - Java与生活 (OOP)',
             items: [
               { text: '参考资料', link: '/pages/8bd1db/' },
               { text: 'Java基础', link: '/pages/ea2997/'},
               { text: 'OOP上半部分', link: '/pages/d161b3/'},
               { text: 'OOP下半部分', link: '/pages/a2c72d/'},
+            ],
+          },
+          {
+            text: 'Frank - Java API进阶',
+            items: [
+              { text: 'Base API', link: '/pages/e6a4f1/' },
+              // { text: 'Java基础', link: '/pages/ea2997/'},
+              // { text: 'OOP上半部分', link: '/pages/d161b3/'},
+              // { text: 'OOP下半部分', link: '/pages/a2c72d/'},
             ],
           },
         ],
@@ -69,7 +83,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
-            text: 'MySQL删库跑路',
+            text: 'Frank - MySQL删库跑路',
             items: [
               { text:'安装、连接、配置', link:'/pages/dec33b/'},
               { text:'基本操作——数据库', link:'/pages/b673ce/'},
@@ -94,7 +108,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ]
           },
           {
-            text: 'Linux现代方法',
+            text: 'Frank - Linux现代方法',
             items: [
               { text:'必知', link:'/pages/0c031c/' },
               { text:'命令', link:'/pages/11d275/' },
