@@ -41,12 +41,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: 'IO & Stream', link: '/pages/03b557/'},
               { text: 'Error & Exception', link: '/pages/5fc0af/'},
               { text: 'Algorithm & Data structure', link: '/pages/5276ce/'},
+              { text: 'Design pattern', link: '/pages/aa23cc/'},
               { text: 'Web', link: '/pages/4b9292/'},
               { text: 'Spring boot', link: '/pages/310689/'},
             ],
           },
           {
-            text: '练习题', link: '/pages/5a0fd5/',
+            text: '练习题', // link: '/pages/5a0fd5/',
             items: [
               { text: '选择题 & 填空题', link: '/pages/dcd812/'},
               { text: '代码题', link: '/pages/5a0fd5/'},
@@ -65,7 +66,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: 'Frank - Java API进阶',
             items: [
               { text: 'Base API', link: '/pages/e6a4f1/' },
-              // { text: 'Java基础', link: '/pages/ea2997/'},
+              { text: 'Unit Test and main function', link: '/pages/ea2997/'},
               // { text: 'OOP上半部分', link: '/pages/d161b3/'},
               // { text: 'OOP下半部分', link: '/pages/a2c72d/'},
             ],
@@ -132,8 +133,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/record/',
         items: [
           { text: 'Monthly', link: '/pages/455805/'},
+          { text: '阅读', link: '/pages/4c7197/'},
           { text: 'Others', link: '/pages/bdd3a5/'},
-          { text: 'Khan Acadamy', link: '/pages/0da670/'},
         ],
       },
       {
