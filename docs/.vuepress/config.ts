@@ -15,7 +15,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Jim's knowledge base",
+      title: "知识库",
       description: 'Java小学生',
     }
   },
@@ -47,7 +47,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
-            text: '练习题', // link: '/pages/5a0fd5/',
+            text: '练习题',
             items: [
               { text: '选择题 & 填空题', link: '/pages/dcd812/'},
               { text: '代码题', link: '/pages/5a0fd5/'},
@@ -68,8 +68,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: 'Base API', link: '/pages/e6a4f1/' },
               { text: 'Unit Test and main function', link: '/pages/ea2997/'},
               // { text: 'OOP上半部分', link: '/pages/d161b3/'},
-              // { text: 'OOP下半部分', link: '/pages/a2c72d/'},
             ],
+          },
+          {
+            text: '学习笔记', link: '/pages/71cc54/' 
           },
         ],
       },
@@ -128,6 +130,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '前端', link: '/pages/8309a5b876fc95e3/'},
         ],
       },
+      { text: '英语',
+        link: '/english/',
+        items: [
+          { text: 'Khan Academy - 语法', link: '/pages/d872e5/' },
+        ],
+      },
       {
         text: '记录',
         link: '/record/',
@@ -148,7 +156,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '友情链接', link: '/friends/' },
         ],
       },
-      { text: '关于', link: '/about/' },
       { text: '收藏', link: '/pages/5b66ca/'},
       {
         text: '索引',
@@ -237,7 +244,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Jim FuckPPT | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'Jim Frank | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 自定义hmtl(广告)模块
@@ -283,7 +290,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     'fulltext-search',
 
     // // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
-    // 'thirdparty-search': {
+    // 'thirdparty-search',
+    // {
     //   thirdparty: [
     //     {
     //       title: '在MDN中搜索',
@@ -294,9 +302,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //       title: '在Runoob中搜索',
     //       frontUrl: 'https://www.runoob.com/?s=',
     //     },
+    //     // {
+    //     //   title: '在Vue API中搜索',
+    //     //   frontUrl: 'https://cn.vuejs.org/v2/api/#',
+    //     // },
     //     {
-    //       title: '在Vue API中搜索',
-    //       frontUrl: 'https://cn.vuejs.org/v2/api/#',
+    //       title: '在Google中搜索',
+    //       frontUrl: 'https://www.google.com/search?q=',
     //     },
     //     {
     //       title: '在Bing中搜索',
@@ -373,7 +385,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    extractHeaders: ['h2', 'h3'/*, 'h4', 'h5', 'h6'*/], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
   // 监听文件变化并重新构建
