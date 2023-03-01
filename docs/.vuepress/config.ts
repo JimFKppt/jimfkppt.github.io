@@ -90,7 +90,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text:'安装、连接、配置', link:'/pages/dec33b/'},
               { text:'基本操作——数据库', link:'/pages/b673ce/'},
-              { text:'基本操作——表', link:'/pages/ac604a/'},
+              { text:'基本操作——表', link:'/pages/130114/'},
               { text:'基本操作——数据', link:'/pages/bda483/'},
               { text:'数据类型', link:'/pages/88991f/'},
               { text:'列属性完整性', link:'/pages/525c9a/'},
