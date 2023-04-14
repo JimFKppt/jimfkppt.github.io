@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Overloading","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"Solve similar tasks"},{"t":"heading","d":2,"p":{"lines":[4,5]},"v":"Change the method's signature","c":[{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"The number of parameters"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"The types of paramters"}]},{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"An overloaded method","c":[{"t":"heading","d":3,"p":{"lines":[9,10]},"v":"Have a same name"},{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"But a different number or type of parameters"},{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"And also with the return type"}]},{"t":"heading","d":2,"p":{"lines":[13,14]},"v":"Casting the type of arguments","c":[{"t":"heading","d":3,"p":{"lines":[14,15]},"v":"Method will chosen the closest type"},{"t":"heading","d":3,"p":{"lines":[15,16]},"v":"Implicit casting"}]}]})</script>
+</body>
+</html>

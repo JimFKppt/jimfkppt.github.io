@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"Inheritance","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"Inheritance represents the <strong>IS-A</strong> relationship"},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"Many things of the real world can be simulated like hierarchies from a more general to a more particular concept."},{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"Class","children":[{"type":"heading","depth":3,"payload":{"lines":[6,7]},"content":"<strong>Superclass</strong> (<strong>Base class</strong> or <strong>Parent class</strong>)","children":[{"type":"heading","depth":4,"payload":{"lines":[7,8]},"content":"represents the general"},{"type":"heading","depth":4,"payload":{"lines":[8,9]},"content":"a superclass can have more than one subclass."}]},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"<strong>Subclass</strong> (<strong>Derived class</strong>, <strong>Extend class</strong> or <strong>Child class</strong>)","children":[{"type":"heading","depth":4,"payload":{"lines":[10,11]},"content":"represents the particular (or specific)"},{"type":"heading","depth":4,"payload":{"lines":[11,12]},"content":"a class can only inherit from a single superclass"},{"type":"heading","depth":4,"payload":{"lines":[12,13]},"content":"A subclass doesn't inherit private fields and methods"}]}]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"<code>extends</code> keyword","children":[{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"To derive a new class from another"}]},{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"Constructors are not inherited","children":[{"type":"heading","depth":3,"payload":{"lines":[18,19]},"content":"Use <code>super</code> keyword"}]},{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"Class hierarchy","children":[{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"multiple levels"}]},{"type":"heading","depth":2,"payload":{"lines":[23,24]},"content":"Final class","children":[{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"It cannot have subclasses at all"},{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"If you try to extend the class, a compile-time error will occur"},{"type":"heading","depth":3,"payload":{"lines":[26,27]},"content":"Some standard classes are declared as final","children":[{"type":"heading","depth":4,"payload":{"lines":[27,28]},"content":"Integer, Long, String, Math ..."}]}]}]},{})</script>
+</body>
+</html>

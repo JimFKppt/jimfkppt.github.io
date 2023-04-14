@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Set JDK and JRE (Windows)","c":[{"t":"heading","d":2,"p":{"lines":[1,2]},"v":"Java Versions","c":[{"t":"heading","d":3,"p":{"lines":[2,3]},"v":"Java 8"},{"t":"heading","d":3,"p":{"lines":[3,4]},"v":"Java 11"},{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"Java 17"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"..."}]},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"每一个版本使用一个独立的主目录路径","c":[{"t":"heading","d":3,"p":{"lines":[8,9]},"v":"主目录路径作<code>JAVA_HOME</code>为的取值"},{"t":"heading","d":3,"p":{"lines":[9,10]},"v":"当更改取值的时候，<code>Path</code>的值自然就更改了"},{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"前提是每个版本主目录下的<code>.\\jdk\\bin</code>和<code>.\\jre\\bin</code>路径名不变"}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"Example (Dir-tree)","c":[{"t":"heading","d":3,"p":{"lines":[13,14]},"v":"D:\\DevTools\\Java8","c":[{"t":"heading","d":4,"p":{"lines":[14,15]},"v":".\\jdk\\bin"},{"t":"heading","d":4,"p":{"lines":[15,16]},"v":".\\jre\\bin"}]},{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"D:\\DevTools\\Java11","c":[{"t":"heading","d":4,"p":{"lines":[18,19]},"v":".\\jdk\\bin"},{"t":"heading","d":4,"p":{"lines":[19,20]},"v":".\\jre\\bin"}]},{"t":"heading","d":3,"p":{"lines":[21,22]},"v":"D:\\DevTools\\Java17","c":[{"t":"heading","d":4,"p":{"lines":[22,23]},"v":".\\jdk\\bin"},{"t":"heading","d":4,"p":{"lines":[23,24]},"v":".\\jre\\bin"}]}]},{"t":"heading","d":2,"p":{"lines":[25,26]},"v":"Environment variables","c":[{"t":"heading","d":3,"p":{"lines":[26,27]},"v":"<code>JAVA_HOME</code>","c":[{"t":"heading","d":4,"p":{"lines":[27,28]},"v":"<code>D:\\DevTools\\Java8</code>"}]},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"<code>Path</code>","c":[{"t":"heading","d":4,"p":{"lines":[29,30]},"v":"<code>%JAVA_HOME%\\jdk\\bin</code>"},{"t":"heading","d":4,"p":{"lines":[30,31]},"v":"<code>%JAVA_HOME%\\Jre\\bin</code>"}]}]},{"t":"heading","d":2,"p":{"lines":[32,33]},"v":"当我们要从Java8切换到Java11版本的时候，改变<code>JAVA_HOME</code>的取值为<code>D:\\DevTools\\Java11</code>即可，无需改变<code>Path</code>下的值"}]})</script>
+</body>
+</html>
